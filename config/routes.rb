@@ -53,4 +53,12 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get '/', to: 'pages#home'
+  get '/catnew', to: 'pages#catnew'
+  post '/catcreate', to: 'pages#catcreate'
+  get '/todonew', to: 'pages#todonew'
+  post '/todocreate', to: 'pages#todocreate'
+  get '/usernew', to: 'pages#usernew'
+  get '/usercreate', to: 'pages#usercreate'
 end
